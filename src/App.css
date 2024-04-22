@@ -1,0 +1,7 @@
+@media (min-width: 640px) {
+    .main-container {
+        display: flex;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,48 @@
+.text-container {
+    margin-left: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-heading {
+    font-size: 30px;
+    line-height: 15px;
+    font-weight: bold;
+}
+
+.text-main-heading {
+    font-size: 36px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #0D99FF;
+}
+
+.custom-hr {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border-top-width: 1px;
+    border-color: rgb(50, 50, 50);
+}
+
+@media (min-width: 640px) {
+    .text-container {
+        margin: auto;
+    }
+
+    .text-heading {
+        font-size: 36px;
+        line-height: 15px;
+    }
+
+    .text-main-heading {
+        font-size: 60px;
+        line-height: 1;
+    }
+
+    .custom-hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

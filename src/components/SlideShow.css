@@ -1,0 +1,26 @@
+.slider-container {
+    position: relative;
+    top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.slide-image {
+    object-fit: contain;
+    border-radius: 12px;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .slider {
+        width: 50vw !important;
+        height: auto !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .slider {
+        width: 95vw !important;
+        margin: auto;
+    }
+}

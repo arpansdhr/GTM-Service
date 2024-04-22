@@ -1,0 +1,36 @@
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4px;
+}
+
+.heading-line {
+  background-color: rgb(50, 50, 50);
+  font: bold;
+  margin: auto;
+  width: 35vw;
+  height: 4px;
+}
+
+.heading-text {
+  color: rgb(50, 50, 50);
+  font: bold;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+@media (min-width: 640px) {
+  .heading-container {
+    margin: auto;
+  }
+
+  .heading-line {
+    width: 40vw;
+  }
+
+  .heading-text {
+    margin: auto;
+  }
+}
