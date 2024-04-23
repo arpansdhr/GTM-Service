@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import { makeStyles } from '@material-ui/core/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import './ButtonComponent.css';
 
 const useStyles = makeStyles((theme) => ({
@@ -24,10 +25,21 @@ const useStyles = makeStyles((theme) => ({
 
 const ButtonComponent = () => {
   const classes = useStyles();
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+
+  const buttonStyle = isSmallScreen ? {
+    height: "60px",
+    width: "150px",
+    fontSize: "24px",
+  } : {
+    height: '66px',
+    width: '200px',
+    fontSize: '18px'
+  };
 
   return (
     <div className="button-container">
-      <Button className={classes.button} variant="outlined" color="error" sx={{width: '200px', height: '60px', fontSize: '18px'}}>
+      <Button className={classes.button} variant="outlined" color="error" sx={buttonStyle}>
         View All
       </Button>
     </div>
